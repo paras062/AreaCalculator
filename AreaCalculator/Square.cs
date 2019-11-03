@@ -42,7 +42,7 @@ namespace AreaCalculator
         /// <returns></returns>
         public override double GetArea()
         {
-            return (side * side);
+            return Math.Pow(side,2);
         }
     }
 }
