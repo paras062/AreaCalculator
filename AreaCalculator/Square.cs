@@ -4,7 +4,7 @@ using System.Text;
 
 namespace AreaCalculator
 {
-    public class Square : Shape
+    public class Square : IQuardilateral
     {
         protected double side;
 
@@ -37,12 +37,12 @@ namespace AreaCalculator
         }
 
         /// <summary>
-        /// Get Area Method implemented from Shape Class
+        /// Get Area Method implemented from interface Quardilateral Class
         /// </summary>
         /// <returns></returns>
-        public override double GetArea()
+        public double calculateArea()
         {
-            return Math.Pow(side,2);
+            return Math.Pow(side, 2);
         }
     }
 }

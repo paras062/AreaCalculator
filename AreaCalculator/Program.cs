@@ -21,8 +21,8 @@ namespace AreaCalculator
                     case 1:
                         Console.WriteLine("You selected Area of Circle");
                         Console.WriteLine("Enter Radius of a Circle");
-                        double r = Convert.ToDouble(Console.ReadLine());
-                        Circle oCircle = new Circle(r);
+                        double radius = Convert.ToDouble(Console.ReadLine());
+                        Circle oCircle = new Circle(radius);
                         Console.WriteLine("Radius of Circle: " + oCircle.GetRadius());
                         Console.WriteLine(Environment.NewLine);
                         Console.WriteLine("Area of Circle: " + oCircle.GetArea());
@@ -30,11 +30,17 @@ namespace AreaCalculator
                     case 2:
                         Console.WriteLine("You selected Area of Square");
                         Console.WriteLine("Enter Side of Square");
-                        double s = Convert.ToDouble(Console.ReadLine());
-                        Square oSquare = new Square(s);
-                        Console.WriteLine("Side of Square: " + oSquare.GetWidth());
+                        double side = Convert.ToDouble(Console.ReadLine());
+                        Square oSquare = new Square(side);
+                        Console.WriteLine("Area of Square: " + oSquare.calculateArea());
                         break;
                     case 3:
+                        Console.WriteLine("You selected Area of Rectangle");
+                        Console.WriteLine("Enter Height & Breadth of Reactangle");
+                        double height = Convert.ToDouble(Console.ReadLine());
+                        double width = Convert.ToDouble(Console.ReadLine());
+                        Rectangle oRectangle = new Rectangle(height, width);
+                        Console.WriteLine("Area of Rectangle: " + oRectangle.calculateArea());
                         break;
 
                     case 4:
